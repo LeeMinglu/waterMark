@@ -23,7 +23,14 @@
     
 //    UIImage *resultImage = [baseImage imageWaterMarkWithString:@"我是rock" point:CGPointMake(20, 200) attribute:@{NSForegroundColorAttributeName:[UIColor blueColor]} image:[UIImage imageNamed:@"1"] imagePoint:CGPointMake(0, 0) alpha:0.2];
     
-    UIImage *resultImage = [baseImage imageWaterMarkWithString:@"我是rock" rect:CGRectMake(0, 100, 200, 100) attribute:@{NSForegroundColorAttributeName:[UIColor blueColor]} image:[UIImage imageNamed:@"1"]  imageRect:CGRectMake(0, 0, self.view.bounds.size.width, 100) alpha:0.4];
+    //设置写入字体的大小
+    /**
+     NSFontAttributeName:[UIFont fontWithName:@"AmericanTypewriter" size:30]
+     
+     */
+    
+    
+    UIImage *resultImage = [baseImage imageWaterMarkWithString:@"我是rock" rect:CGRectMake(self.view.center.x, self.view.center.y, 500, 100) attribute:@{NSForegroundColorAttributeName:[UIColor blueColor], NSFontAttributeName:[UIFont fontWithName:@"AmericanTypewriter" size:50]} image:[UIImage imageNamed:@"1"]  imageRect:CGRectMake(0, 0, 100, 100) alpha:0.5];
     
     UIImageView  *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     

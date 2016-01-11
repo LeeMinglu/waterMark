@@ -16,6 +16,7 @@
 		1A9855231C43E16E00B50A67 /* UIImage+WaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9855221C43E16E00B50A67 /* UIImage+WaterMark.m */; };
 		1A9855251C43E1A000B50A67 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9855241C43E19F00B50A67 /* 1.png */; };
 		1A9855271C43E1D400B50A67 /* IMG_0821.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1A9855261C43E1D400B50A67 /* IMG_0821.JPG */; };
+		1A98552A1C43F0EF00B50A67 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9855291C43F0EF00B50A67 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		1A9855221C43E16E00B50A67 /* UIImage+WaterMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WaterMark.m"; sourceTree = "<group>"; };
 		1A9855241C43E19F00B50A67 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		1A9855261C43E1D400B50A67 /* IMG_0821.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0821.JPG; sourceTree = "<group>"; };
+		1A9855281C43F0EF00B50A67 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1A9855291C43F0EF00B50A67 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				1A9855241C43E19F00B50A67 /* 1.png */,
 				1A9855181C43E09F00B50A67 /* LaunchScreen.storyboard */,
 				1A98551B1C43E09F00B50A67 /* Info.plist */,
+				1A9855281C43F0EF00B50A67 /* UIView+Extension.h */,
+				1A9855291C43F0EF00B50A67 /* UIView+Extension.m */,
 				1A9855211C43E16E00B50A67 /* UIImage+WaterMark.h */,
 				1A9855221C43E16E00B50A67 /* UIImage+WaterMark.m */,
 				1A98550A1C43E09F00B50A67 /* Supporting Files */,
@@ -121,6 +126,7 @@
 				TargetAttributes = {
 					1A9855061C43E09F00B50A67 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = T9A27F8Q5D;
 					};
 				};
 			};
@@ -162,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A98552A1C43F0EF00B50A67 /* UIView+Extension.m in Sources */,
 				1A9855231C43E16E00B50A67 /* UIImage+WaterMark.m in Sources */,
 				1A9855121C43E09F00B50A67 /* ViewController.m in Sources */,
 				1A98550F1C43E09F00B50A67 /* AppDelegate.m in Sources */,
@@ -275,10 +282,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = waterMark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.waterMark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -286,10 +296,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = waterMark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.waterMark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
